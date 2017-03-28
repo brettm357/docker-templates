@@ -1,63 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Containers>
-<Beta>False</Beta>
-<Category>MediaApp:Video MediaApp:Music MediaApp:Photos MediaServer:Video MediaServer:Music MediaServer:Photos</Category>
-  <Name>binhex-plex</Name>
-  <Description>
-    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free![br][br]
-    [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
-    [b]/config[/b] This is where plex will store it's configuration file, database and logs.[br]
-    [b]/media[/b] This is where plex will scan for media files.
-  </Description>
-  <Overview>
-    The Plex Media Server enriches your life by organizing all your personal media, presenting it beautifully and streaming it to all of your devices. It's easy to use, it's awesome, and it's free!
-  </Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=45844.0</Support>
-  <Registry>https://registry.hub.docker.com/u/binhex/arch-plex/</Registry>
-  <GitHub>https://github.com/binhex/arch-plex</GitHub>
-  <Repository>binhex/arch-plex</Repository>
-  <Project>https://plex.tv/</Project>
-  <BindTime>true</BindTime>
+<Container>
+  <Name>unifi</Name>
+  <Repository>brettm357/unifi</Repository>
+  <Registry>https://hub.docker.com/r/brettm357/unifi</Registry>
+  <Network>bridge</Network>
   <Privileged>false</Privileged>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish>
-    </Publish>
+  <Beta>False</Beta>
+  <Support />
+  <Overview>The UniFi® Controller software is a powerful, enterprise wireless solution</Overview>
+  <Category>Network:Management Tools:</Category>
+  <WebUI>https://[IP]:[PORT:8443]</WebUI>
+  <TemplateURL />
+  <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
+  <ExtraParams /> 
+  <DateInstalled />
+  <Description>The UniFi® Controller software is a powerful, enterprise wireless software</Description>
+  <Networking> 
+  <Mode>bridge</Mode> 
+  <Publish>
+  <Port>
+  <HostPort>8080</HostPort> 
+  <ContainerPort>8080</ContainerPort> 
+  <Protocol>tcp</Protocol> 
+  </Port>
+  <Port>
+  <HostPort>8081</HostPort> 
+  <ContainerPort>8081</ContainerPort> 
+  <Protocol>tcp</Protocol> 
+  </Port>
+  <Port>
+  <HostPort>8443</HostPort> 
+  <ContainerPort>8443</ContainerPort> 
+  <Protocol>tcp</Protocol> 
+  </Port>
+  <Port>
+  <HostPort>8843</HostPort> 
+  <ContainerPort>8843</ContainerPort> 
+  <Protocol>tcp</Protocol> 
+  </Port>
+  <Port>
+  <HostPort>8880</HostPort> 
+  <ContainerPort>8880</ContainerPort>  
+  <Protocol>tcp</Protocol> 
+  </Port>
+  <Port>
+  <HostPort>6789</HostPort> 
+  <ContainerPort>6789</ContainerPort> 
+  <Protocol>tcp</Protocol> 
+  </Port>
+  </Publish>
   </Networking>
-  <Environment>
-    <Variable>
-      <Name>TRANS_DIR</Name>
-      <Value>/config/transcode</Value>
-    </Variable>
-    <Variable>
-      <Name>UMASK</Name>
-      <Value>000</Value>
-    </Variable>
-    <Variable>
-      <Name>PUID</Name>
-      <Value>99</Value>
-    </Variable>
-    <Variable>
-      <Name>PGID</Name>
-      <Value>100</Value>
-    </Variable>
-  </Environment>
   <Data>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/config</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user</HostDir>
-      <ContainerDir>/media</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
+  <Volume>
+  <HostDir>/mnt/user/appdata/unifi</HostDir> 
+  <ContainerDir>/usr/lib/unifi/data</ContainerDir> 
+  <Mode>rw</Mode> 
+  </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:32400]/web/index.html</WebUI>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/plex-icon.png</Icon>
-  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
-  <DonateLink>https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MM5E27UX6AUU4</DonateLink>
-  <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>
-  <ExtraParams></ExtraParams>
-</Containers>
+  <Environment>
+  <Variable>
+  <Value>99</Value> 
+  <Name>PUID</Name> 
+  <Mode /> 
+  </Variable>
+  <Variable>
+  <Value>100</Value> 
+  <Name>PGID</Name> 
+  <Mode /> 
+  </Variable> 
+  </Environment>
+  <Config Name="Host Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config> 
+  <Config Name="Host Port 2" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="true" Mask="false">8081</Config> 
+  <Config Name="Host Port 3" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config> 
+  <Config Name="Host Port 4" Target="8843" Default="8843" Mode="tcp" Description="Container Port: 8843" Type="Port" Display="always" Required="true" Mask="false">8843</Config> 
+  <Config Name="Host Port 5" Target="8880" Default="8880" Mode="tcp" Description="Container Port: 8880" Type="Port" Display="always" Required="true" Mask="false">8880</Config> 
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config> 
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config> 
+  <Config Name="Host Port 6" Target="6789" Default="6789" Mode="tcp" Description="Container Port: 6789" Type="Port" Display="always" Required="false" Mask="false">6789</Config> 
+  <Config Name="AppData Config Path" Target="/usr/lib/unifi/data" Default="/mnt/user/appdata/unifi" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/unifi</Config> 
+</Container>
+  
+  
+  
+  
+  
+  
+  
