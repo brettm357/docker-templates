@@ -10,7 +10,7 @@
   <Overview>The UniFi® Controller software is a powerful, enterprise wireless solution</Overview>
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
-  <TemplateURL />
+  <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams /> 
   <DateInstalled />
