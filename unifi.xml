@@ -14,7 +14,7 @@
   <Icon>https://github.com/brettm357/docker-templates/blob/master/images/U_Logo_RGB.png</Icon>
   <ExtraParams /> 
   <DateInstalled />
-  <Description>The UniFi® Controller software is a powerful, enterprise wireless solution</Description>
+  <Description>UniFi Controller Software latest version including unstable</Description>
   <Networking> 
   <Mode>bridge</Mode> 
   <Publish>
