@@ -7,14 +7,14 @@
   <Privileged>false</Privileged>
   <Beta>False</Beta>
   <Support />
-  <Overview>Unifi Access Point Controller Software - Stable Candidate Version</Overview>
+  <Overview>UniFi Access Point Controller Software - Stable Candidate Version</Overview>
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams /> 
   <DateInstalled />
-  <Description>Unifi Access Point Controller Software - Stable Candidate Version</Description>
+  <Description>UniFi Access Point Controller Software - Stable Candidate Version</Description>
   <Networking> 
   <Mode>bridge</Mode> 
   <Publish>
