@@ -14,61 +14,8 @@
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams /> 
   <DateInstalled />
-  <Description>UniFi Access Point Controller Software - Stable Candidate Version</Description>
-  <Networking> 
+  <Description>UniFi Access Point Controller Software - Stable Candidate Version</Description> 
   <Mode>bridge</Mode> 
-  <Publish>
-  <Port>
-  <HostPort>8080</HostPort> 
-  <ContainerPort>8080</ContainerPort> 
-  <Protocol>tcp</Protocol> 
-  </Port>
-  <Port>
-  <HostPort>8081</HostPort> 
-  <ContainerPort>8081</ContainerPort> 
-  <Protocol>tcp</Protocol> 
-  </Port>
-  <Port>
-  <HostPort>8443</HostPort> 
-  <ContainerPort>8443</ContainerPort> 
-  <Protocol>tcp</Protocol> 
-  </Port>
-  <Port>
-  <HostPort>8843</HostPort> 
-  <ContainerPort>8843</ContainerPort> 
-  <Protocol>tcp</Protocol> 
-  </Port>
-  <Port>
-  <HostPort>8880</HostPort> 
-  <ContainerPort>8880</ContainerPort>  
-  <Protocol>tcp</Protocol> 
-  </Port>
-  <Port>
-  <HostPort>6789</HostPort> 
-  <ContainerPort>6789</ContainerPort> 
-  <Protocol>tcp</Protocol> 
-  </Port>
-  </Publish>
-  </Networking>
-  <Data>
-  <Volume>
-  <HostDir>/mnt/user/appdata/unifi</HostDir> 
-  <ContainerDir>/usr/lib/unifi/data</ContainerDir> 
-  <Mode>rw</Mode> 
-  </Volume>
-  </Data>
-  <Environment>
-  <Variable>
-  <Value>99</Value> 
-  <Name>PUID</Name> 
-  <Mode /> 
-  </Variable>
-  <Variable>
-  <Value>100</Value> 
-  <Name>PGID</Name> 
-  <Mode /> 
-  </Variable> 
-  </Environment>
   <Config Name="Host Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config> 
   <Config Name="Host Port 2" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="true" Mask="false">8081</Config> 
   <Config Name="Host Port 3" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config> 
