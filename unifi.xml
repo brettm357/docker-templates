@@ -11,7 +11,7 @@
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
-  <Icon>https://dl.ubnt.com/press/Company_Logos/Primary/WEB/UBNT_Primary_Logo_RGB.png</Icon>
+  <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams /> 
   <DateInstalled />
   <Description>UniFi Access Point Controller Software - Stable Candidate Version</Description> 
