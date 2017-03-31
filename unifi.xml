@@ -8,7 +8,7 @@
   <Beta>False</Beta>
   <Support>https://forums.lime-technology.com/topic/56178-support-brettm357-unifi</Support>
   <Project>https://community.ubnt.com/</Project>
-  <Overview>UniFi Access Point Controller Software - Stable Candidate Version</Overview>
+  <Overview>UniFi Access Point Controller Software - Version</Overview>
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
