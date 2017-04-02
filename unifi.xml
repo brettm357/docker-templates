@@ -61,14 +61,12 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>mnt/cache/appdata/unifi</HostDir>
+      <HostDir>/mnt/cache/appdata/unifi</HostDir>
       <ContainerDir>/usr/lib/unifi/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-</Data>
-    <Data>
     <Volume>
-      <HostDir>mnt/cache/appdata/unifi</HostDir>
+      <HostDir>/mnt/cache/appdata/unifi</HostDir>
       <ContainerDir>/usr/lib/unifi/logs</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
