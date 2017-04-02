@@ -4,9 +4,9 @@
   <Repository>brettm357/unifi</Repository>
   <Registry>https://hub.docker.com/r/brettm357/unifi</Registry>
   <Networking>
-  <Mode>host</Mode>
+  <Mode>bridge</Mode>
   </Networking>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Beta>False</Beta>
   <Support>https://forums.lime-technology.com/topic/56178-support-brettm357-unifi</Support>
   <Project>https://community.ubnt.com/</Project>
