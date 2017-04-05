@@ -12,8 +12,8 @@
   <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi-beta-release.xml</TemplateURL>
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams/>
-  <DateInstalled>1491400078</DateInstalled>
-  <Description>UniFi Access Point Controller Software - version</Description>
+  <DateInstalled/>
+  <Description>UniFi Access Point Controller Software - Candidate Version</Description>
   <Networking>
     <Mode>host</Mode>
     <Publish>
