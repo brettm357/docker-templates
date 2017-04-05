@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Unifi</Name>
+  <Name>Unifi-Candidate</Name>
   <Repository>brettm357/unifi-beta-release</Repository>
-  <Registry>https://hub.docker.com/r/brettm357/https://github.com/brettm357/unifi-beta-release</Registry>
+  <Registry>https://hub.docker.com/r/brettm357/unifi-beta-release</Registry>
   <Network>host</Network>
   <Privileged>true</Privileged>
   <Support>https://forums.lime-technology.com/topic/56178-support-brettm357-unifi</Support>
   <Overview>UniFi Access Point Controller Software - version</Overview>
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
-  <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
+  <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi-beta-release.xml</TemplateURL>
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams/>
   <DateInstalled>1491400078</DateInstalled>
