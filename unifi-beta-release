@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Unifi-Candidate</Name>
+  <Name>unifi-candidate</Name>
   <Repository>brettm357/unifi-beta-release</Repository>
   <Registry>https://hub.docker.com/r/brettm357/unifi-beta-release</Registry>
   <Network>host</Network>
