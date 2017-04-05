@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Unifi</Name>
-  <Repository>brettm357/unifi</Repository>
-  <Registry>https://hub.docker.com/r/brettm357/unifi</Registry>
+  <Repository>brettm357/unifi-beta-release</Repository>
+  <Registry>https://hub.docker.com/r/brettm357/https://github.com/brettm357/unifi-beta-release</Registry>
   <Network>host</Network>
   <Privileged>true</Privileged>
   <Support>https://forums.lime-technology.com/topic/56178-support-brettm357-unifi</Support>
