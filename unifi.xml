@@ -6,14 +6,14 @@
   <Network>host</Network>
   <Privileged>true</Privileged>
   <Support>https://forums.lime-technology.com/topic/56178-support-brettm357-unifi</Support>
-  <Overview>UniFi Access Point Controller Software - version</Overview>
+  <Overview>UniFi Access Point Controller Software - 5.6.2</Overview>
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams/>
   <DateInstalled/>
-  <Description>UniFi Access Point Controller Software - 5.6.2</Description>
+  <Description>UniFi Access Point Controller Software - version 5.6.2</Description>
   <Networking>
     <Mode>host</Mode>
     <Publish>
