@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Unifi</Name>
-  <BaseImage>debian/baseimage:stretch</BaseImage>
+  <BaseImage>debian:stretch</BaseImage>
   <Date>2017-04-07</Date>
   <Repository>brettm357/unifi</Repository>
   <Registry>https://hub.docker.com/r/brettm357/unifi</Registry>
