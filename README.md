@@ -1,1 +1,1 @@
-# Unifi AP Controller Software current version 5.6.1
+# Unifi AP Controller Software current version 5.6.2
