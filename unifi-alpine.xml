@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>unifi-alpine</Name>
+  <Beta>true</Beta>
   <Repository>brettm357/alpine</Repository>
   <Registry>https://hub.docker.com/r/brettm357/alpine</Registry>
   <Network>host</Network>
