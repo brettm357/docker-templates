@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Unifi</Name>
   <BaseImage>Debian:Stretch</BaseImage>
-  <Date>2018-08-15</Date>
+  <Date>2018-08-30</Date>
   <Repository>brettm357/unifi</Repository>
   <Registry>https://hub.docker.com/r/brettm357/unifi</Registry>
   <Network>host</Network>
@@ -16,7 +16,7 @@
   <Icon>https://dl.ubnt.com/press/Company_Logos/U_Logo/WEB/U_Logo_RGB.png</Icon>
   <ExtraParams/>
   <DateInstalled/>
-  <Description>UniFi Access Point Controller Software - version 5.9.22</Description>
+  <Description>UniFi Access Point Controller Software - version 5.9.24</Description>
   <Networking>
     <Mode>host</Mode>
     <Publish>
