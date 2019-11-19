@@ -2,7 +2,7 @@
 <Container version="2">
   <Name>Unifi</Name>
   <BaseImage>Debian:Stretch</BaseImage>
-  <Date>2019-08-27</Date>
+  <Date>2019-11-19</Date>
   <Repository>brettm357/unifi</Repository>
   <Registry>https://hub.docker.com/r/brettm357/unifi</Registry>
   <Network>host</Network>
@@ -19,7 +19,7 @@
   <DonateLink>https://paypal.me/brettm357?locale.x=en_AU</DonateLink>
   <DonateImg>https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif</DonateImg>  
   <DateInstalled/>
-  <Description>UniFi Access Point Controller Software - version 5.11.39</Description>
+  <Description>UniFi Access Point Controller Software - version 5.12.22</Description>
   <Networking>
     <Mode>host</Mode>
     <Publish>
