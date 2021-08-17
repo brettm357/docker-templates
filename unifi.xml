@@ -9,7 +9,13 @@
   <Privileged>true</Privileged>
   <Support>https://forums.lime-technology.com/topic/56178-support-brettm357-unifi</Support>
   <Project>https://www.ui.com</Project>
-  <Overview>Use the UniFi Controller software to quickly configure and administer an enterprise Wi‐Fi network. RF map and performance features, real-time status, automatic UAP device detection, and advanced security options are all seamlessly integrated.</Overview>
+    <Overview>Use the UniFi Controller software to quickly configure and administer an enterprise Wi&#x2010;Fi network. RF map and performance features, real-time status, automatic UAP device detection, and advanced security options are all seamlessly integrated.[br]
+[br]
+[b][u]Additional Ports not mapped by default:[/u][/b][br]
+[b]5514 (UDP)[/b] Port used for remote syslog capture.[br]
+[b]27117 (TCP)[/b] Port used for local-bound database communication.[br]
+[b]5656-5699 (UDP)[/b] Ports used by AP-EDU broadcasting.[br]
+[b]10001 (UDP)[/b] Port used for device discovery.[br]</Overview>
   <Category>Network:Management Tools:</Category>
   <WebUI>https://[IP]:[PORT:8443]</WebUI>
   <TemplateURL>https://github.com/brettm357/docker-templates/blob/master/unifi.xml</TemplateURL>
@@ -24,6 +30,11 @@
     <Mode>host</Mode>
     <Publish>
       <Port>
+        <HostPort>1900</HostPort>
+        <ContainerPort>1900</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+      <Port>
         <HostPort>3478</HostPort>
         <ContainerPort>3478</ContainerPort>
         <Protocol>udp</Protocol>
@@ -36,11 +47,6 @@
       <Port>
         <HostPort>8080</HostPort>
         <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8081</HostPort>
-        <ContainerPort>8081</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
@@ -84,13 +90,14 @@
       <Mode/>
     </Variable>
   </Environment>
-  <Config Name="Host Port 1" Target="3478" Default="3478" Mode="udp" Description="Container Port: 3478" Type="Port" Display="always" Required="true" Mask="false">3478</Config>
-  <Config Name="Host Port 2" Target="6789" Default="6789" Mode="tcp" Description="Container Port: 6789" Type="Port" Display="always" Required="true" Mask="false">6789</Config>
-  <Config Name="Host Port 3" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Host Port 4" Target="8081" Default="8081" Mode="tcp" Description="Container Port: 8081" Type="Port" Display="always" Required="true" Mask="false">8081</Config>
-  <Config Name="Host Port 5" Target="8443" Default="8443" Mode="tcp" Description="Container Port: 8443" Type="Port" Display="always" Required="true" Mask="false">8443</Config>
-  <Config Name="Host Port 6" Target="8843" Default="8843" Mode="tcp" Description="Container Port: 8843" Type="Port" Display="always" Required="true" Mask="false">8843</Config>
-  <Config Name="Host Port 7" Target="8880" Default="8880" Mode="tcp" Description="Container Port: 8880" Type="Port" Display="always" Required="true" Mask="false">8880</Config>
+  <Labels/>
+  <Config Name="Host Port 1" Target="1900" Default="1900" Mode="udp" Description="Port used for Make application discoverable on L2 network in the UniFi Network settings." Type="Port" Display="always" Required="true" Mask="false">1900</Config>
+  <Config Name="Host Port 2" Target="3478" Default="3478" Mode="udp" Description="Port used for STUN." Type="Port" Display="always" Required="true" Mask="false">3478</Config>
+  <Config Name="Host Port 3" Target="6789" Default="6789" Mode="tcp" Description="Port used for UniFi mobile speed test." Type="Port" Display="always" Required="true" Mask="false">6789</Config>
+  <Config Name="Host Port 4" Target="8080" Default="8080" Mode="tcp" Description="Port used for device and application communication." Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Host Port 5" Target="8443" Default="8443" Mode="tcp" Description="Port used for application GUI/API as seen in a web browser." Type="Port" Display="always" Required="true" Mask="false">8443</Config>
+  <Config Name="Host Port 6" Target="8843" Default="8843" Mode="tcp" Description="Port used for HTTPS portal redirection." Type="Port" Display="always" Required="true" Mask="false">8843</Config>
+  <Config Name="Host Port 7" Target="8880" Default="8880" Mode="tcp" Description="Port used for HTTP portal redirection." Type="Port" Display="always" Required="true" Mask="false">8880</Config>
   <Config Name="Host Path 1" Target="/usr/lib/unifi/data" Default="/mnt/cache/appdata/unifi" Mode="rw" Description="Container Path: /usr/lib/unifi/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/unifi</Config>
   <Config Name="Host Path 2" Target="/usr/lib/unifi/logs" Default="/mnt/cache/appdata/unifi/logs" Mode="rw" Description="Container Path: /usr/lib/unifi/logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/unifi/logs</Config>
   <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
